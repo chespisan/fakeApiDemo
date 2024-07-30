@@ -1,5 +1,5 @@
 export default async function Home() {
-  const api = process.env.NEXT_PUBLIC_API_LOCAL;
+  const api = process.env.API_LOCAL;
   const response = await fetch(`${api}/api`);
   const { products } = await response.json();
   console.log("Products: ", products);
